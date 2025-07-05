@@ -60,7 +60,7 @@ lakectl fs upload \
 
 lakectl commit \
   lakefs://ml-ops-hw1-athletes/v2 \
-  -m "v2: full cleaning + total_lift + region & gender encoding"```
+  -m "v2: full cleaning + total_lift + region & gender encoding"
   
 ---
 ## 📁 DVC Workflow (used in dvc/code_dvc.ipynb)
