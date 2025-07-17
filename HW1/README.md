@@ -6,7 +6,7 @@ This repository compares two data versioning platforms — **lakeFS** and **DVC*
 
 ## 🔧 Repository Structure
 
-
+```bash
 ML-Ops-HW1/
 ├── dvc/
 │ ├── code_dvc.ipynb
@@ -26,7 +26,7 @@ ML-Ops-HW1/
 ├── model3_dp.ipynb # Differential Privacy model (TF Privacy)
 ├── results_platform_comparison.pptx
 └── README.md
-
+```
 ---
 
 ## 🚀 lakeFS Workflow (used in `lakefs/code_lakefs.ipynb`)
