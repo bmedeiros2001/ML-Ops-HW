@@ -4,7 +4,7 @@ This repository compares two data versioning platforms — **lakeFS** and **DVC*
 
 ---
 
-## 🔧 Repository Structure
+## Repository Structure
 
 ```bash
 ML-Ops-HW1/
@@ -29,7 +29,7 @@ ML-Ops-HW1/
 ```
 ---
 
-## 🚀 lakeFS Workflow (used in `lakefs/code_lakefs.ipynb`)
+## lakeFS Workflow (used in `lakefs/code_lakefs.ipynb`)
 
 Each version of the dataset was stored as a branch:
 - `main`: original dataset (`athletes_main.csv`)
@@ -61,7 +61,7 @@ lakectl fs upload \
 lakectl commit \
   lakefs://ml-ops-hw1-athletes/v2 \
   -m "v2: full cleaning + total_lift + region & gender encoding"
-  
+```
 ---
 ## 📁 DVC Workflow (used in dvc/code_dvc.ipynb)
 Versioning done locally using DVC + Git. Each version is tracked using .dvc files:
@@ -87,10 +87,10 @@ git commit -m "Add athletes_v1.csv: cleaned data for baseline model"
 dvc add athletes_v2.csv
 git add athletes_v2.csv.dvc .gitignore
 git commit -m "Add athletes_v2.csv: further cleaning of the data (v2)"```
-
+```
 ---
 
-## 📊 Modeling Overview
+## Modeling Overview
 - Model 1: Trained on minimally cleaned data (v1)
 - Model 2: Trained on fully cleaned & encoded data (v2)
 - Model 3: Differential Privacy (DP-SGD) model using TensorFlow Privacy, trained on v2
@@ -102,7 +102,7 @@ File names and explanation:
 
 ---
 
-## 📈 Results & Comparison
+## Results & Comparison
 See results_platform_comparison.pptx for a side-by-side comparison of model performance across versions
 
 ---
